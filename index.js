@@ -1,20 +1,12 @@
-let record = [
-  {year: "2018", result: "L"},
-  {year: "2017", result: "W"},
-  {year: "2016", result: "N/A"}
-  //...
-]
+const testVar = {}
 
-let superbowlWin=function(arr){
-  let find=arr.find(function(w){
-    return w.result==="W";
-  })
-  if(find===undefined){
-    return "undefined"
-  }
-  else {
-    return find.year;
-  }
+function testFunc() {
+  return "hi";
 }
 
-superbowlWin(record)
+function superbowlWin(record){
+  let winResult=record.find(obj=> obj.result==="W");
+  if (winResult!==undefined) return winResult.year;
+  else return undefined;
+   
+}
