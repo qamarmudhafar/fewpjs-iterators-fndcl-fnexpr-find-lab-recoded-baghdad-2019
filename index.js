@@ -10,7 +10,7 @@ let superbowlWin=function(arr){
     return w.result==="W";
   })
   if(find===undefined){
-    return "NO WINS"
+    return "undefined"
   }
   else {
     return find.year;
